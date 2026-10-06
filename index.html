@@ -13,29 +13,36 @@
   <meta name="bingbot" content="index, follow">
 
   <link rel="canonical" href="https://pre-query-intent.github.io/">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "TechArticle",
-  "headline": "Pre-Query Intent — AI Judgment, Gateway and Orchestration",
-  "description": "Independent notes on pre-query intent, AI judgment, multi-model orchestration, agent selection, AI gateways, control planes, interoperability and ecosystem neutrality.",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://pre-query-intent.github.io/"
-  },
-  "keywords": [
-    "pre-query intent",
-    "AI judgment",
-    "AI gateway",
-    "multi-model orchestration",
-    "agent selection",
-    "AI orchestration",
-    "control plane",
-    "interoperability",
-    "ecosystem neutrality"
-  ]
-}
-</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "Pre-Query Intent — AI Judgment, Gateway and Orchestration",
+    "description": "Independent notes on pre-query intent, AI judgment, multi-model orchestration, agent selection, AI gateways, control planes, interoperability and ecosystem neutrality.",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Person",
+      "name": "Pre-query Layer"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://pre-query-intent.github.io/"
+    },
+    "keywords": [
+      "pre-query intent",
+      "AI judgment",
+      "AI gateway",
+      "multi-model orchestration",
+      "agent selection",
+      "AI orchestration",
+      "control plane",
+      "interoperability",
+      "ecosystem neutrality"
+    ]
+  }
+  </script>
+
   <style>
     body {
       max-width: 760px;
@@ -63,6 +70,12 @@
     .subtitle {
       font-size: 18px;
       color: #555;
+      margin-bottom: 12px;
+    }
+
+    .byline {
+      font-size: 14px;
+      color: #666;
       margin-bottom: 32px;
     }
 
@@ -91,6 +104,7 @@
 
     a {
       color: #111;
+      overflow-wrap: anywhere;
     }
 
     a:hover {
@@ -124,203 +138,232 @@
 </head>
 
 <body>
+  <main>
+    <header>
+      <h1>Pre-Query Intent</h1>
 
-  <h1>Pre-Query Intent</h1>
+      <div class="subtitle">
+        Independent notes on AI judgment, gateways, and orchestration above models.
+      </div>
 
-  <div class="subtitle">
-    Independent notes on AI judgment, gateways, and orchestration above models.
-  </div>
+      <p class="byline">By Pre-query Layer</p>
+    </header>
 
-  <p class="lead">
-    AI has been competing on answers.
-  </p>
+    <section aria-label="Overview">
+      <p>
+        In these notes, <strong>pre-query intent</strong> refers to the
+        context and emerging intent that precede a fully formed,
+        explicit user question. It includes how a system may interpret
+        signals and help shape question formation before an answer is requested.
+      </p>
 
-  <p class="lead">
-    But the most consequential layer may be forming somewhere else.
-  </p>
+      <p>
+        An <strong>AI gateway</strong> may select and route requests
+        among models, agents, tools, and services.
+        <strong>Multi-model orchestration</strong> coordinates those
+        resources under constraints such as cost, latency, permissions,
+        policy, and verification.
+      </p>
 
-  <p>
-    As models, agents, search systems, tools, devices, and services multiply,
-    intelligence becomes abundant. And when intelligence becomes abundant,
-    a different question begins to matter:
-  </p>
+      <p>
+        These notes also examine interoperability and governance.
+        <strong>Neutral coordination</strong> is a conditional possibility,
+        not an inevitable outcome: open protocols, standards bodies,
+        cloud platforms, or consortia may address the same problems.
+      </p>
+    </section>
 
-  <p class="question">
-    Who decides which intelligence gets to act?
-  </p>
+    <p class="lead">
+      AI has been competing on answers.
+    </p>
 
-  <p>
-    Before an answer, there is selection.<br>
-    Before selection, there is judgment.<br>
-    Before judgment, intent must somehow be understood.
-  </p>
-
-  <p>
-    The system that occupies this position may not need to be the best model.
-    It may instead determine which model, agent, search system, tool, or service
-    gets the opportunity to answer or act.
-  </p>
-
-  <p>
-    That changes the competitive question.
-  </p>
-
-  <p class="statement">
-    The model owns capability. The gateway owns choice.
-  </p>
-
-  <p>
-    These notes examine the emerging territory of pre-query intent, context,
-    judgment, multi-model orchestration, agent selection, AI gateways, control
-    planes, interoperability, and ecosystem neutrality—and the possibility that
-    the next strategic layer of AI may emerge not inside the models, but above
-    and before them.
-  </p>
-
-
-  <div class="essay">
-
-    <h2>Before the Question: The Next Competitive Layer in AI</h2>
-
-    <p class="question">
-      What if the next major AI competition begins before the user has fully
-      formed a question?
+    <p class="lead">
+      But the most consequential layer may be forming somewhere else.
     </p>
 
     <p>
-      The AI industry has spent years competing over who can produce the best
-      answer. But an increasingly context-aware system may act before an explicit
-      prompt exists—interpreting signals, inferring intent, recognizing what
-      matters, and helping determine what should be asked in the first place.
-    </p>
-
-    <p>
-      If that happens, question formation itself becomes a competitive layer.
-    </p>
-
-    <p>
-      The strategic question is no longer only:
-    </p>
-
-    <p class="statement">
-      Who has the best answer?
-    </p>
-
-    <p>
-      It also becomes:
-    </p>
-
-    <p class="statement">
-      Who gets closest to the moment before the question exists?
-    </p>
-
-    <p>
-      This essay explores pre-query intent and the possibility that AI
-      competition may move upstream—from answering human questions toward
-      understanding and shaping the conditions from which those questions emerge.
-    </p>
-
-    <p class="statement">
-      The competition for answers may be only part of the competition.
-    </p>
-
-    <p>
-      <a href="https://medium.com/@WizEye/before-the-question-the-next-competitive-layer-in-ai-3372c5501d23">
-        Read the original essay on Medium
-      </a>
-    </p>
-
-  </div>
-
-
-  <div class="essay">
-
-    <h2>Above the Models: The Coming Battle for the AI Flag</h2>
-
-    <p class="question">
-      What happens when intelligence itself is no longer scarce?
-    </p>
-
-    <p>
-      As models and agents proliferate, the most strategically important
-      position may not belong to the intelligence that produces the best answer.
-    </p>
-
-    <p>
-      It may belong to the layer that decides <strong>who gets to answer.</strong>
-    </p>
-
-    <p>
-      Such a layer would interpret context and intent, exercise judgment,
-      orchestrate multiple intelligences, and determine which model, agent,
-      search system, tool, or service should act in a given situation.
-    </p>
-
-    <p>
-      At that point, orchestration is no longer merely a technical problem.
-    </p>
-
-    <p class="statement">
-      It becomes a question of selection, control, interoperability, neutrality,
-      and ecosystem power.
-    </p>
-
-    <p>
-      And if many competing intelligences must pass through a gateway before
-      reaching the user, another question follows:
+      As models, agents, search systems, tools, devices, and services multiply,
+      intelligence becomes abundant. And when intelligence becomes abundant,
+      a different question begins to matter:
     </p>
 
     <p class="question">
-      Who owns the gateway?
+      Who decides which intelligence gets to act?
     </p>
 
     <p>
-      This essay examines the emerging competition above models and agents—and
-      why the battle for AI leadership may eventually extend beyond intelligence
-      itself to the layer that chooses among intelligences.
+      Before an answer, there is selection.<br>
+      Before selection, there is judgment.<br>
+      Before judgment, intent must somehow be understood.
+    </p>
+
+    <p>
+      The system that occupies this position may not need to be the best model.
+      It may instead determine which model, agent, search system, tool, or service
+      gets the opportunity to answer or act.
+    </p>
+
+    <p>
+      That changes the competitive question.
     </p>
 
     <p class="statement">
-      Model leadership does not guarantee gateway leadership.
+      The model owns capability. The gateway owns choice.
     </p>
 
     <p>
-      <a href="https://medium.com/@WizEye/above-the-models-the-coming-battle-for-the-ai-flag-07b7dfe5d275">
-        Read the original essay on Medium
-      </a>
+      These notes examine the emerging territory of pre-query intent, context,
+      judgment, multi-model orchestration, agent selection, AI gateways, control
+      planes, interoperability, and ecosystem neutrality—and the possibility that
+      the next strategic layer of AI may emerge not inside the models, but above
+      and before them.
     </p>
 
-  </div>
-  <section class="essay" aria-labelledby="research-note-title">
-    <h2 id="research-note-title">
-      Research Note: Pre-Query Intent — AI Judgment, Gateway and Orchestration
-    </h2>
+    <article class="essay" aria-labelledby="before-question-title">
+      <h2 id="before-question-title">
+        Before the Question: The Next Competitive Layer in AI
+      </h2>
 
-    <p>
-      By Pre-query Layer · Published on Zenodo: October 1, 2026
-    </p>
+      <p class="question">
+        What if the next major AI competition begins before the user has fully
+        formed a question?
+      </p>
 
-    <p>
-      This independent research note examines how AI competition
-      may extend from model capability to judgment, model selection,
-      agent routing, and multi-model orchestration.
-      It also considers interoperability and governance, treating
-      neutral coordination as a conditional possibility rather
-      than an inevitable outcome.
-    </p>
+      <p>
+        The AI industry has spent years competing over who can produce the best
+        answer. But an increasingly context-aware system may act before an explicit
+        prompt exists—interpreting signals, inferring intent, recognizing what
+        matters, and helping determine what should be asked in the first place.
+      </p>
 
-    <p>
-      <a href="https://zenodo.org/records/23073609">
-        View the research note and PDF on Zenodo
-      </a>
-    </p>
+      <p>
+        If that happens, question formation itself becomes a competitive layer.
+      </p>
 
-    <p>
-      DOI:
-      <a href="https://doi.org/10.5281/zenodo.23073609">
-        10.5281/zenodo.23073609
-      </a>
-    </p>
-  </section>
+      <p>
+        The strategic question is no longer only:
+      </p>
+
+      <p class="statement">
+        Who has the best answer?
+      </p>
+
+      <p>
+        It also becomes:
+      </p>
+
+      <p class="statement">
+        Who gets closest to the moment before the question exists?
+      </p>
+
+      <p>
+        This essay explores pre-query intent and the possibility that AI
+        competition may move upstream—from answering human questions toward
+        understanding and shaping the conditions from which those questions emerge.
+      </p>
+
+      <p class="statement">
+        The competition for answers may be only part of the competition.
+      </p>
+
+      <p>
+        <a href="https://medium.com/@WizEye/before-the-question-the-next-competitive-layer-in-ai-3372c5501d23">
+          Before the Question: The Next Competitive Layer in AI — Read on Medium
+        </a>
+      </p>
+    </article>
+
+    <article class="essay" aria-labelledby="above-models-title">
+      <h2 id="above-models-title">
+        Above the Models: The Coming Battle for the AI Flag
+      </h2>
+
+      <p class="question">
+        What happens when intelligence itself is no longer scarce?
+      </p>
+
+      <p>
+        As models and agents proliferate, the most strategically important
+        position may not belong to the intelligence that produces the best answer.
+      </p>
+
+      <p>
+        It may belong to the layer that decides <strong>who gets to answer.</strong>
+      </p>
+
+      <p>
+        Such a layer would interpret context and intent, exercise judgment,
+        orchestrate multiple intelligences, and determine which model, agent,
+        search system, tool, or service should act in a given situation.
+      </p>
+
+      <p>
+        At that point, orchestration is no longer merely a technical problem.
+      </p>
+
+      <p class="statement">
+        It becomes a question of selection, control, interoperability, neutrality,
+        and ecosystem power.
+      </p>
+
+      <p>
+        And if many competing intelligences must pass through a gateway before
+        reaching the user, another question follows:
+      </p>
+
+      <p class="question">
+        Who owns the gateway?
+      </p>
+
+      <p>
+        This essay examines the emerging competition above models and agents—and
+        why the battle for AI leadership may eventually extend beyond intelligence
+        itself to the layer that chooses among intelligences.
+      </p>
+
+      <p class="statement">
+        Model leadership does not guarantee gateway leadership.
+      </p>
+
+      <p>
+        <a href="https://medium.com/@WizEye/above-the-models-the-coming-battle-for-the-ai-flag-07b7dfe5d275">
+          Above the Models: The Coming Battle for the AI Flag — Read on Medium
+        </a>
+      </p>
+    </article>
+
+    <section class="essay" aria-labelledby="research-note-title">
+      <h2 id="research-note-title">
+        Research Note: Pre-Query Intent — AI Judgment, Gateway and Orchestration
+      </h2>
+
+      <p>
+        By Pre-query Layer · Published on Zenodo:
+        <time datetime="2026-10-01">October 1, 2026</time>
+      </p>
+
+      <p>
+        This independent research note examines how AI competition
+        may extend from model capability to judgment, model selection,
+        agent routing, and multi-model orchestration.
+        It also considers interoperability and governance, treating
+        neutral coordination as a conditional possibility rather
+        than an inevitable outcome.
+      </p>
+
+      <p>
+        <a href="https://zenodo.org/records/23073609">
+          Pre-Query Intent — AI Judgment, Gateway and Orchestration — Research note and PDF on Zenodo
+        </a>
+      </p>
+
+      <p>
+        DOI:
+        <a href="https://doi.org/10.5281/zenodo.23073609">
+          10.5281/zenodo.23073609
+        </a>
+      </p>
+    </section>
+  </main>
 </body>
 </html>
